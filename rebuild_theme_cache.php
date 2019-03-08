@@ -3,11 +3,13 @@
 /* 
 For Moodle 3.3+
 This script should be added to ./admin/cli/ and called via commandline.
-Uncomment the below define('CLI_SCRIPT', true); when in prodcution.
+1. Uncomment the below define('CLI_SCRIPT', true); when in prodcution.
+2. Uncomment the below require(__DIR__.'/../../config.php'); when in prodcution.
 */
 
 //define('CLI_SCRIPT', true);
-require(__DIR__.'/../../config.php');
+//require(__DIR__.'/../../config.php');
+require('config.php');
 require_once($CFG->dirroot.'/lib/csslib.php');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
